@@ -1,0 +1,42 @@
+{
+  "author": "quxbaz",
+  "license": "MIT",
+  "name": "timer2",
+  "version": "0.0.1",
+  "description": "Javascript timer with events in a webworker thread",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quxbaz/timer2.git"
+  },
+  "keywords": [
+    "time",
+    "timer",
+    "clock",
+    "alarm"
+  ],
+  "bugs": {
+    "url": "https://github.com/quxbaz/timer2/issues"
+  },
+  "homepage": "https://github.com/quxbaz/timer2#readme",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-preset-es2015": "^6.3.13",
+    "es6-promise": "^3.0.2",
+    "expect": "^1.16.0",
+    "mocha": "^2.4.5",
+    "webpack": "^1.12.11"
+  },
+  "scripts": {
+    "serve": "webpack-dev-server --content-base=public",
+    "test": "webpack-dev-server --content-base=public_test --entry=tests",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "analyze": "webpack --json | webpack-bundle-size-analyzer"
+  }
+}

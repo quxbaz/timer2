@@ -1,4 +1,4 @@
-// imports
+import './Timer'
 
 // Stops mocha from intercepting errors so we have proper source-map
 // support

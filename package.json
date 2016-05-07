@@ -2,7 +2,7 @@
   "author": "quxbaz",
   "license": "MIT",
   "name": "timer2",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Javascript timer with events in a webworker thread",
   "main": "index.js",
   "directories": {
@@ -38,5 +38,9 @@
     "test": "webpack-dev-server --content-base=public_test --entry=tests",
     "build": "NODE_ENV=production webpack --progress --colors",
     "analyze": "webpack --json | webpack-bundle-size-analyzer"
+  },
+  "dependencies": {
+    "qux": "git+https://github.com/quxbaz/qux.git",
+    "sentry": "git+https://github.com/quxbaz/sentry.git"
   }
 }

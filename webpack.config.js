@@ -21,7 +21,9 @@ var config = {
         include: [
           resolve(__dirname, 'index'),
           resolve(__dirname, 'lib'),
-          resolve(__dirname, 'tests')
+          resolve(__dirname, 'tests'),
+          resolve(__dirname, 'node_modules/qux'),
+          resolve(__dirname, 'node_modules/sentry'),
         ],
         query: {
           presets: ['es2015'],

@@ -70,9 +70,6 @@ describe('Timer', () => {
       }
     })
     t.restart()
-    t.restart()
-    t.restart()
-    t.restart()
   })
 
 })

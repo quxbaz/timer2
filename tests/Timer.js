@@ -59,4 +59,20 @@ describe('Timer', () => {
     }).start()
   })
 
+  it("Restarts a timer.", (done) => {
+    const t = new Timer({tickInterval: 1})
+    let i = 0
+    t.on('tick', () => {
+      i++
+      if (i === 4) {
+        t.stop()
+        done()
+      }
+    })
+    t.restart()
+    t.restart()
+    t.restart()
+    t.restart()
+  })
+
 })
